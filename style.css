@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: blueviolet;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 21px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: lavender;
+    font-size: 1.02rem;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.main {
+    margin: 0 21px;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 145px 0;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.leftsection{
+    padding: 50px 0;
+}
+
+.leftsection .btn{
+    padding: 12px;
+    background: white;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.rightsection img {
+    align-items: center;
+    width: 130%;
+    width:50px 0;
+    border-radius: 75px;
+
+}
+
+.blue {
+    color: #b37be7;
+}
+
+#element {
+    color: rgb(121, 121, 217);
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.secondsection h1 {
+    font-size: xx-large;
+
+}
+
+.text-gray {
+    color: gray;
+}
+
+.secondsection .box {
+    background: white;
+    width: 81vw;
+    height: 2px;
+    margin: 51px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 100px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.image-top {
+    width: 51px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position:static;
+    top: 75px;
+    width: 150px;
+    font-size: 18px;
+}
+
+.vertical-desc {
+    position:static;
+    top: 56px;
+    color: gray;
+    width: 100px;
+    font-size: 14px;
+    display: flex;
+}
+
+footer{
+    background-color: #0e0e1a;
+    height:201px;
+    padding: 40px;
+}
+
+.footer{
+    display: flex;
+    padding: 30px;
+    gap: 60px;
+}
+
+.fa-brands fa-linkedin{
+    color: white;
+}
+
+.flex{
+    display: flex;
+    margin: 50px 50px;
+    gap: 250px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.footer > div{
+    width:123px ;
+}
+
+footer .footer-rights{
+    text-align: center;
+    color: gray;
+    padding: 22px 0;
+}
+
+.bar{
+    color: white;
+}
+
+.logo{
+    position:static;
+}
+
+.llogo{
+    width: 20px;
+}
+
+.glogo{
+    width: 30px;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .box{
+        flex-direction: column;
+    }
+
+    .secondsection .vertical{
+        height: unset;
+    }
+
+    .vertical-title, .vertical-desc{
+        left: 45px;
+    }   
+    
+    .secondsection .box{
+        width: 50vw;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    body{
+        background-color: green;
+    }
+
+    .firstsection{
+        flex-direction: column-reverse;
+    }
+
+   .leftsection{
+    width: 100% !important;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+   }
+
+  .rightsection{
+    width: 721px !important;
+  }
+
+}
